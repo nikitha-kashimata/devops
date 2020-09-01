@@ -72,9 +72,10 @@ def login():
 	if 'Username' in session:
 		return redirect(url_for('index'))
 
-	# session.pop('Username',None)
-	connection,cursor=connect()
+	#session.pop('Username',None)
 	error = None
+	connection,cursor=connect()
+	
 	if request.method=='POST':
 		inp = request.form
 		name = inp['Username']
