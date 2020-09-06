@@ -8,7 +8,7 @@ def connect():
 	print("connected")
 	connection = pymysql.connect(host='localhost',
                              user='root',
-                             password='root123',                             
+                             password='',                             
                              db='grocery',
                              charset='utf8mb4',
                              cursorclass=pymysql.cursors.DictCursor)
